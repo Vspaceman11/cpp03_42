@@ -22,11 +22,11 @@ ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other)
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 {
-	std::cout << "Copy assignment ScavTrap operator " << _name << " called" << std::endl;
 	if (this != &other)
 	{
 		ClapTrap::operator=(other);
 	}
+	std::cout << "Copy assignment ScavTrap operator " << _name << " called" << std::endl;
 	return *this;
 }
 
